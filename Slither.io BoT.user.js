@@ -292,7 +292,11 @@ var canvasUtil = window.canvasUtil = (function() {
     };
 })();
 
-// Kolejne etapy usprawnien:
+// Historia usprawnien:
+// 1. Sledzenie predkosci glow i przewidywanie najblizszego zblizenia.
+// 2. Ocena 16 kierunkow ucieczki na podstawie przeszkod i ruchomych glow.
+// 3. Wykrywanie zwezajacych sie tras oraz warunkowy boost awaryjny.
+// Kolejne etapy:
 // 4. Dodac indeks przestrzenny, aby nie skanowac liniowo list slithers i foods.
 // 5. Przewidywac ruch segmentow ciala, nie tylko glow przeciwnikow.
 // 6. Kalibrowac progi na powtarzalnych scenariuszach i pomiarach przezywalnosci.
